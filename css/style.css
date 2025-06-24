@@ -1,0 +1,195 @@
+:root {
+    --color-titulos: #282d33;
+    --color-contenido: #898989;
+    --fondo-hero: #f9f9f9;
+    --fondo-clients: #f5f5f5;
+    --fondo-footer: #30363d;
+    --color-footer: #898989;
+}
+
+body {
+    font-family: 'Catamaran', Arial, sans-serif;
+    color: var(--color-contenido);
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+}
+.navbar-brand img {
+    max-height: 60px;
+}
+.nav-link {
+    color: var(--color-titulos) !important;
+    font-weight: 600;
+}
+
+
+.hero-section {
+    background: var(--fondo-hero);
+    padding: 80px 0 60px 0;
+}
+.hero-section h1 {
+    color: var(--color-titulos);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero-section p {
+    color: var(--color-contenido);
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+.btn-hero {
+    background: var(--color-titulos);
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-weight: 600;
+}
+.btn-hero i {
+    margin-left: 8px;
+}
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-products-section {
+    background: url('../img/product-parallax.jpg') center center/cover no-repeat;
+    padding: 100px 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.cta-products-section .small-title {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.cta-products-section h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+.cta-products-section p {
+    color: #fff;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.info-product-section {
+    padding: 70px 0;
+}
+.info-product-section h3 {
+    color: var(--color-titulos);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.info-product-section p {
+    color: var(--color-contenido);
+}
+.btn-link {
+    color: var(--color-titulos);
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn-link i {
+    margin-left: 6px;
+}
+
+.cta-flexibility-section {
+    background: url('../img/product-parallax-2.jpg') center center/cover no-repeat;
+    padding: 100px 0;
+    color: #fff;
+}
+.cta-flexibility-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.cta-flexibility-section p {
+    max-width: 600px;
+}
+.cta-flexibility-section .btn-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.products-section {
+    padding: 80px 0 60px 0;
+}
+.products-section h2 {
+    color: var(--color-titulos);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.products-section .product-card {
+    margin-bottom: 30px;
+}
+.product {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    padding: 25px 20px;
+    text-align: center;
+    transition: box-shadow .2s;
+}
+
+.product-info h4 {
+    font-size: 1.15rem;
+    color: var(--color-titulos);
+    margin: 15px 0 6px 0;
+}
+.stars {
+    color: #ffd700;
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+.price {
+    color: var(--color-titulos);
+    font-weight: 700;
+}
+.old-price {
+    color: #bbb;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+
+.clients-section {
+    background: var(--fondo-clients);
+    padding: 45px 0;
+}
+.clients-logos img {
+    max-height: 40px;
+    margin: 0 24px;
+    opacity: 0.85;
+    transition: opacity .2s;
+}
+
+
+footer {
+    background-color: var(--fondo-footer);
+    color: var(--color-footer);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 991.98px) {
+    .products-section .product-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 60px 0 40px 0;
+    }
+    .products-section .product-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
